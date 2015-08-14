@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title>Calculations</title>
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<style>
+#otherstuff {
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:13px;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3; border-right:0px;
+		background: #0095cd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+}
+#otherstuff:hover {
+		text-decoration: none;
+		background: #007ead;
+		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	}
+body {
+  background-color   : rgba(255,255,255,0.9);
+}
+
+p {
+	text-align: center;
+	font-size: 30px;
+}
+
+#stuff {
+		padding: 5px 15px;
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
+		font-size:20px;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3; border-right:0px;
+		background: #0095cd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 8px 8px;
+		border-bottom-right-radius: 8px 8px;
+		border-top-left-radius: 8px 8px;
+		border-bottom-left-radius: 8px 8px;
+		height: 50px;
+		width: 200px;
+}
+#stuff:hover {
+		text-decoration: none;
+		background: #007ead;
+		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	}
+h1 {
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+#search {
+		width: 500px;
+		height: 50px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 30px;
+}
+td {
+		font-size: 25px;
+		text-align: center;
+}
+</style>
+</head>
+</body>
+<h1><center>The Calculations - Determining the "Z-Score"</center><h1>
+<center><img src="http://i1128.photobucket.com/albums/m481/Miranda_Faulkner/formula_zps5xafy5kw.png" alt="Formula" style="width:704px;height:128px; border:5px dotted #CC0033;"></center>
+</br>
+<p>k<sub>m</sub>=100 &nbsp &nbsp k<sub>r</sub>=50 &nbsp &nbsp k<sub>v</sub>=20 &nbsp &nbsp k<sub>a</sub>=10 &nbsp &nbsp k<sub>p</sub>=1 &nbsp &nbsp k<sub>t</sub>=2 </p>
+
+<h2>Step One</h2>
+<p>The "z-score" is the number that represents the safety level of a school. Data regarding the number of on-campus murders, rapes, violent crimes, assaults, property crimes, and thefts were collected from FBI databases. In the equation, m = murders, r = rapes, v = violent crimes, a = assaults, p = property crimes, and t = thefts. The definition of rape used by the FBI includes revised and legacy rapes, as of 2013. The thefts is a sum of larceny, robbery, burglary, and motor vehicle theft. Each variable was assigned a respective coefficient that determined the weight of the crime. For example, murder has the greatest coefficient (k<sub>m</sub> = 100) because it is a far more serious crime than theft, for example.</p>
+
+<h2>Step Two</h2>
+<p>The summation of the crimes was divided by e, which represents the enrollment size. The sum divided by the enrollment was then subtracted from 1. The higher the z-score, the more safe a school is, and the lower the z-score, the more unsafe it is. The scale for the z-score is from 0 to 1, and the average z-score is about 0.93 (B+). The full grading scale is listed below.</p>
+
+<h2>Determining the Grading Scale</h2>
+<p>Based on the distribution of the z-scores per year, a grading scale was created. It is listed below.</p>
+</br>
+<center><table border="1" style="width:40%"></center>
+	<tr>
+		<td><b>Grade</b></td>
+		<td><b>Z-score</b></td>
+	</tr>
+	<tr>
+		<td>A+</td>
+		<td>0.98 - 1</td>
+	</tr>
+	<tr>
+		<td>A</td>
+		<td>0.96 - 0.98</td>
+	</tr>
+	<tr>
+		<td>A-</td>
+		<td>0.94 - 0.96</td>
+	</tr>
+	<tr>
+		<td>B+</td>
+		<td>0.92 - 0.94</td>
+	</tr>
+	<tr>
+		<td>B</td>
+		<td>0.90 - 0.92</td>
+	</tr>
+	<tr>
+		<td>B-</td>
+		<td>0.87 - 0.90</td>
+	</tr>
+	<tr>
+		<td>C+</td>
+		<td>0.84 - 0.87</td>
+	</tr>
+	<tr>
+		<td>C</td>
+		<td>0.81 - 0.84</td>
+	</tr>
+	<tr>
+		<td>C-</td>
+		<td>0.78 - 0.81</td>
+	</tr>
+	<tr>
+		<td>D</td>
+		<td>0.72 - 0.78</td>
+	</tr>
+	<tr>
+		<td>F</td>
+		<td>Less than 0.72</td>
+	</tr>
+</table>
+<br></br><br></br>
+<form>
+<input type="button" value="Back to Main" onclick="location.href='safecollege.html'" id="otherstuff"/>
+</form> 
+<br></br>
+</body>
+</html>
