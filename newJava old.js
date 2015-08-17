@@ -1,4 +1,3 @@
-
 //Declare global variables
 var dict2011 = {};
 var dict2012 = {};
@@ -160,7 +159,7 @@ function acceptValue(){
 	$("#div2").fadeIn();
 }
 function roundToFive(num){
-	var str = num.toString() + "00000";
+	var str = num.toString();
 	var end = "";
 	for(var i=0; i<5; i++){
 		end = end + str[i]
@@ -184,3 +183,4 @@ jQuery(function($){
 		}
 		});
 	});
+
