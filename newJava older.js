@@ -160,12 +160,10 @@ function acceptValue(){
 	$("#div2").fadeIn();
 }
 function roundToFive(num){
-	var str = num.toString();
+	var str = num.toString() + "00000";
 	var end = "";
 	for(var i=0; i<5; i++){
-		if(i<str.length){
-			end = end + str[i];
-		}
+		end = end + str[i];
 	}
 	return end;
 }
